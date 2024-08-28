@@ -1,6 +1,6 @@
 <template>
   <div class="singlePage async MFlex">
-    <h2>This page is a demo for single OpenAd ad! </h2>
+    <h2>This page is a demo for async load OpenAd ad! </h2>
     <div class="openAdExtend" v-if="openAdExtend.img.src && openAdExtend.img.width && openAdExtend.img.height">
       <a href="javascript:void(0)" class="Flex" rel="noopener nofollow" @click="clickCb">
         <img
