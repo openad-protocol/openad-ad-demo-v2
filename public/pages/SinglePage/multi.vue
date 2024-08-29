@@ -1,6 +1,6 @@
 <template>
   <div class="singlePage multi MFlex">
-    <h2>This page is a demo for load multi OpenAd ads! </h2>
+    <h2>This page is a demo for multi mode to load OpenAd ads! </h2>
     <template v-for="(item, index) in openAdExtend.adList" :key="index">
       <div class="openAdExtend" v-if="item.img.src && item.img.width && item.img.height">
         <a href="javascript:void(0)" class="Flex" rel="noopener nofollow" @click="clickCb(index)">

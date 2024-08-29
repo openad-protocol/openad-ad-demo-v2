@@ -27,6 +27,12 @@ const pathList = [{
       component: () => import(/* webpackChunkName: "SinglePageSingle" */'@/pages/SinglePage/single.vue'),
     },
     {
+      path: '/SinglePage/native',
+      name: 'SinglePageNative',
+      meta: { title: '', keepAlive: false },
+      component: () => import(/* webpackChunkName: "SinglePageNative" */'@/pages/SinglePage/native.vue'),
+    },
+    {
       path: '/SinglePage/multi',
       name: 'SinglePageMulti',
       meta: { title: '', keepAlive: false },

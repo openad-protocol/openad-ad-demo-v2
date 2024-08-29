@@ -23,8 +23,9 @@ export default defineComponent({
   },
   setup(){
     const paths = ref([{ path: '/SinglePage/async', desc: 'load ad with async mode...' },
-      { path: '/SinglePage/single', desc: 'load ad with single ad...' },
-      { path: '/SinglePage/multi', desc: 'load ads with multi ads...' }]);
+      { path: '/SinglePage/native', desc: 'load ad with native mode...' },
+      { path: '/SinglePage/single', desc: 'load ad with single ad mode...' },
+      { path: '/SinglePage/multi', desc: 'load ads with multi ads mode...' }]);
 
     const router = useRouter();
 
