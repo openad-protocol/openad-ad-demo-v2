@@ -60,9 +60,9 @@ export default defineComponent({
       }
       /**
        * code: 0, data: {  } // img object and values
-       * code: -1, msg: 'load openADSDK Js error!'
-       * code: -2, msg: 'load openAD content error!'
-       * code: -3, msg: 'No openAD available!'
+       * code: -1, msg: 'load extend js error!'
+       * code: -2, msg: 'get openAD ads error!'
+       * code: -3, msg: 'No openAD Ads available yet!'
        **/
     });
 

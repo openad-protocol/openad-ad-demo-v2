@@ -35,7 +35,7 @@ export default defineComponent({
       key: 'openADSDK',
       APP: null,
       adList: [{ zoneId: proxy.$AppEnv.zoneId, reviveId: proxy.$AppEnv.reviveId, img: { } },
-        { zoneId: proxy.$AppEnv.zoneId, reviveId: proxy.$AppEnv.reviveId, img: { } }],
+        { zoneId: 13, reviveId: proxy.$AppEnv.reviveId, img: { } }],
     })
 
     onMounted(async () => {
@@ -54,9 +54,9 @@ export default defineComponent({
       }
       /**
        * code: 0, data: {  } // img object and values
-       * code: -1, msg: 'load openADSDK Js error!'
-       * code: -2, msg: 'load openAD content error!'
-       * code: -3, msg: 'No openAD available!'
+       * code: -1, msg: 'load extend js error!'
+       * code: -2, msg: 'get openAD ads error!'
+       * code: -3, msg: 'No openAD Ads available yet!'
        **/
     });
 
