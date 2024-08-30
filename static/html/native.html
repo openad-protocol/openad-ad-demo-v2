@@ -67,11 +67,21 @@
                     let dom = document.querySelector('.openAdNative.MFlex');
                     dom.innerHTML = `<a href="javascript:void(0);" onclick="window.openAdNative.cb()"><img src="${d.src}" width="${d.width}" height="${d.height}" style="max-width: 100%;max-height: 100%;object-fit: contain;"></a>`;
                 }
+                /**
+                 * code: 0, data: {  } // img object and values
+                 * code: -1, msg: 'load openADSDK Js error!'
+                 * code: -2, msg: 'load openAD content error!'
+                 * code: -3, msg: 'No openAD available!'
+                 **/
             },
             /** openAD ad img click function **/
             cb: function (){
                 let img = window.openAdNative.img, params = { bannerid: img.bannerid, zoneid: img.zoneid, sig: img.sig };
                 window.openADSDK.click.cb(params, window.Telegram.WebApp);
+            },
+            /** close openAD ad **/
+            destroy: function(){
+                document.querySelector('.openAdNative.MFlex').innerHTML = '';
             }
         };
 
@@ -81,7 +91,7 @@
         /** if you have more than 1 ad by your zoneId, and you want to refresh openAD ad, you should use the codes below **/
         setTimeout(function(){
             window.openAdNative.getAD();
-        }, 5000);
+        }, 200000);
     });
 </script>
 <!--openAD script above-->
