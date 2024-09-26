@@ -1,4 +1,4 @@
-/**异步加载JS**/
+/**AsyncLoadScript**/
 const AsyncLoadScript = function(obj, callback){
   let isSameName = false, isSameVersion = false, script = document.querySelectorAll('script');
   for(let i=0;i<script.length;i++){
@@ -26,6 +26,7 @@ const AsyncLoadScript = function(obj, callback){
     script.setAttribute('src', obj.url);
     script.setAttribute('name', obj.name);
     script.setAttribute('version', obj.version);
+    script.async = true;
     body.appendChild(script);
     if(document.all){
       script.onreadystatechange = function() {
