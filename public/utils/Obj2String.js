@@ -1,4 +1,4 @@
-/**对象转string**/
+/**Obj2String**/
 const Obj2String = function(Obj){
   let string = '', t = 0, NewObj = JSON.parse(JSON.stringify(Obj));
   for(let p in NewObj){
